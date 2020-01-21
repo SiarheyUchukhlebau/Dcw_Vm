@@ -1,0 +1,19 @@
+{
+    "name": "dcw/module-vm",
+    "description": "Vm Module https://magento.stackexchange.com/questions/178030/how-to-save-image-custom-attribute-in-magento-2?noredirect=1#comment245511_178030",
+    "require": {
+        "magento/module-ui"      : ">=100.1.0 < 101"
+    },
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Dcw\\Vm\\": ""
+        }
+    }
+}
