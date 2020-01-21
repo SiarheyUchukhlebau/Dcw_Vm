@@ -228,6 +228,22 @@ $elementToggleCode = $element->getToggleCode() ? $element->getToggleCode() : 'to
                     </div>
                 </div>
 
+                <div class="admin__field field-image-custom_link">
+                    <label class="admin__field-label" for="custom_image_link">
+                        <span><?= $block->escapeHtml(__('Custom Image Link')) ?></span>
+                    </label>
+                    <div class="admin__field-control">
+                        <div class="admin__field admin__field-option">
+                        <textarea type="text"
+                                  rows="2"
+                                  data-role="custom_image_link"
+                                  data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+                                  class="admin__control-textarea"
+                                  name="<?= /* @noEscape */ $elementName; ?>[<%- data.file_id %>][custom_image_link]"><%- data.custom_image_link %></textarea>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="admin__field field-image-role">
                     <label class="admin__field-label">
                             <span><?php echo $block->escapeHtml(
